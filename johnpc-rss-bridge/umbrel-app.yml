@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: johnpc-rss-bridge
+name: RSS Bridge
+tagline: The RSS feed for websites missing it
+icon: https://rss-bridge.org/bridge01/static/logo_600px.png
+category: media
+version: "0.0.1"
+port: 1021
+description: >-
+RSS-Bridge is a web application.
+
+It generates web feeds for websites that don't have one.
+
+Officially hosted instance at https://rss-bridge.org/bridge01/
+
+developer: RSS-Bridge
+website: https://rss-bridge.org/bridge01/
+submitter: johnpc
+submission: https://github.com/johnpc/umbrel-community-app-store
+repo: https://github.com/johnpc/umbrel-community-app-store
+support: https://github.com/johnpc/umbrel-community-app-store/issues
+gallery:
+  - https://rss-bridge.org/bridge01/static/logo_600px.png
+releaseNotes: >-
+  Initial umbrel release
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

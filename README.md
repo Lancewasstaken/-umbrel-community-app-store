@@ -7,7 +7,7 @@ Just click the "Use this template" button above and start adding your own apps!
 ### Technical Details
 
 The `umbrel-app-store.yml` file defines two important properties:
-- `id` - This is used as a prefix for all apps within the community app store. You **MUST** prefix your application id with your app store ID. For example, this template defines `sparkles` as a community app store ID and we have a `hello world` app. The app ID therefore should be: `sparkles-hello-world`
+- `id` - This is used as a prefix for all apps within the community app store. You **MUST** prefix your application id with your app store ID. For example, this template defines `johnpc` as a community app store ID and we have a `hello world` app. The app ID therefore should be: `johnpc-hello-world`
 - `name` - This name appears within the Umbrel user interface when users explore apps within these community app stores.
 
 
@@ -30,7 +30,7 @@ sudo ~/umbrel/scripts/repo update
 
 To install an app from the app store
 ```
-sudo ~/umbrel/scripts/app install sparkles-hello-world
+sudo ~/umbrel/scripts/app install johnpc-hello-world
 ```
 
 To remove an app store:
