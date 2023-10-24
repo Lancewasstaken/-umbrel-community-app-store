@@ -5,6 +5,7 @@ services:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: johnpc-rss-bridge_server_1
       APP_PORT: 80
+      PROXY_AUTH_ADD: "false"
   server:
     image: rssbridge/rss-bridge:latest
     user: "1000:1000"
