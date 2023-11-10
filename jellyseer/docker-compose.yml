@@ -15,8 +15,6 @@ services:
         - TZ=Asia/Tashkent
         - PUID=1000
         - PGID=1000
-    ports:
-        - 5055:5055
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
     restart: on-failure
