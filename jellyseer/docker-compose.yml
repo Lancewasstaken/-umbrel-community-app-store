@@ -1,15 +1,13 @@
-version: "3.7"
-
+version: '3'
 services:
-  app_proxy:
-    environment:
-      APP_HOST: jellyseerr_server_1
-      APP_PORT: 5055
-      PROXY_AUTH_ADD: "false"
-
-  server:
-    image: fallenbagel/jellyseerr:latest
-    restart: on-failure
-    stop_grace_period: 1m
-    user: "1000:1000"
-    init: true
+    jellyseerr:
+       image: fallenbagel/jellyseerr:latest
+       container_name: jellyseerr
+       environment:
+            - LOG_LEVEL=debug
+            - TZ=Asia/Tashkent
+       ports:
+            - 5055:5055
+       volumes:
+            - /home/umbrel/jellyseer/config:/app/config
+       restart: unless-stopped
