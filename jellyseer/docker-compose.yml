@@ -10,9 +10,14 @@ services:
 
   server:
     image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
     environment:
-      - PUID=1000
-      - PGID=1000
+        - LOG_LEVEL=debug
+        - TZ=Asia/Tashkent
+        - PUID=1000
+        - PGID=1000
+    ports:
+        - 5055:5055
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
     restart: on-failure
