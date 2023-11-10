@@ -5,16 +5,9 @@ services:
     environment:
       APP_HOST: jellyseerr_server_1
       APP_PORT: 5055
-      PROXY_AUTH_WHITELIST: "/api/*"
       PROXY_AUTH_ADD: "false"
 
-  server:
+  web:
     image: fallenbagel/jellyseerr:latest
-    environment:
-        - LOG_LEVEL=debug
-        - TZ=Asia/Tashkent
-        - PUID=1000
-        - PGID=1000
-    volumes:
-      - ${APP_DATA_DIR}/data/config:/config
     restart: on-failure
+    stop_grace_period: 1m
