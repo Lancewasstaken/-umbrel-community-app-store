@@ -2,6 +2,8 @@ version: "2"
 services:
   status_app:
     image: mrorbitman/status:latest
+    ports:
+      - 9090:9090
     volumes:
       - "/etc/os-release:/host_root/etc/os-release:rw"
       - "/etc/hostname:/host_root/etc/hostname:rw"
