@@ -2,7 +2,6 @@ version: '3'
 services:
     jellyseerr:
        image: fallenbagel/jellyseerr:latest
-       container_name: jellyseerr
        environment:
             - LOG_LEVEL=debug
             - TZ=Asia/Tashkent

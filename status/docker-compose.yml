@@ -1,0 +1,17 @@
+version: "2"
+services:
+  status_app:
+    image: fallenbagel/jellyseerr:latest
+    volumes:
+      - "/etc/os-release:/host_root/etc/os-release:rw"
+      - "/etc/hostname:/host_root/etc/hostname:rw"
+      - "/proc:/host_root/proc"
+      - "/proc/mounts:/host_root/proc/mounts"
+      - "/home:/home:rw"
+      - "/tmp:/tmp:rw"
+      - "/mnt:/mnt:rw"
+      - "/media:/media:rw"
+      - "/run/media:/run/media:rw"
+    network_mode: "host"
+    restart: unless-stopped
+
