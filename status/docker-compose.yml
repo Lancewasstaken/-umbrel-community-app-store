@@ -1,7 +1,7 @@
 version: "2"
 services:
   status_app:
-    image: fallenbagel/jellyseerr:latest
+    image: mrorbitman/status:latest
     volumes:
       - "/etc/os-release:/host_root/etc/os-release:rw"
       - "/etc/hostname:/host_root/etc/hostname:rw"
