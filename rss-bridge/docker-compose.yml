@@ -10,5 +10,3 @@ services:
     image: rssbridge/rss-bridge:latest
     user: "1000:1000"
     init: true
-    ports:
-      - 1022:80
