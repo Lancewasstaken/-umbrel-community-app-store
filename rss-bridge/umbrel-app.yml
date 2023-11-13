@@ -2,7 +2,6 @@ manifestVersion: 1
 id: rss-bridge
 name: RSS Bridge
 tagline: The RSS feed for websites missing it
-icon: https://rss-bridge.org/bridge01/static/logo_600px.png
 category: media
 version: "0.0.1"
 port: 1022
