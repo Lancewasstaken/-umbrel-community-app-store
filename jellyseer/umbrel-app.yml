@@ -23,9 +23,7 @@ repo: https://github.com/sct/jellyseer
 support: https://github.com/sct/jellyseer/issues
 port: 5055
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
+  - https://s3.us-west-2.amazonaws.com/jpcbucket.com/jellyseer-icon.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
