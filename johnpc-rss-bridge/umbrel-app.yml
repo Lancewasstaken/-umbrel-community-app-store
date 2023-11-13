@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: johnpc-rss-bridge
+id: rss-bridge
 name: RSS Bridge
 tagline: The RSS feed for websites missing it
 icon: https://rss-bridge.org/bridge01/static/logo_600px.png
