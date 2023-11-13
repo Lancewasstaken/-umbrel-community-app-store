@@ -12,6 +12,7 @@ dependencies: []
 repo: https://github.com/dani3l0/Status
 support: https://github.com/dani3l0/Status
 port: 9090
+icon: https://s3.us-west-2.amazonaws.com/jpcbucket.com/status-icon.png
 gallery:
   - https://s3.us-west-2.amazonaws.com/jpcbucket.com/status-icon.png
 path: ""

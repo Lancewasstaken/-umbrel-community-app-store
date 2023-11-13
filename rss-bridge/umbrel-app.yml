@@ -19,6 +19,7 @@ submitter: johnpc
 submission: https://github.com/johnpc/umbrel-community-app-store
 repo: https://github.com/johnpc/umbrel-community-app-store
 support: https://github.com/johnpc/umbrel-community-app-store/issues
+icon: https://s3.us-west-2.amazonaws.com/jpcbucket.com/rss-bridge-icon.png
 gallery:
   - https://s3.us-west-2.amazonaws.com/jpcbucket.com/rss-bridge-icon.png
 releaseNotes: >-

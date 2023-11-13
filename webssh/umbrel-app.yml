@@ -12,6 +12,7 @@ dependencies: []
 repo: https://github.com/huashengdun/webssh
 support: https://github.com/huashengdun/webssh/issues
 port: 8888
+icon: https://s3.us-west-2.amazonaws.com/jpcbucket.com/webssh-icon.png
 gallery:
   - https://s3.us-west-2.amazonaws.com/jpcbucket.com/webssh-icon.png
 path: ""
