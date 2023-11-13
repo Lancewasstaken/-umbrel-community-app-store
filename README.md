@@ -1,4 +1,10 @@
-## Umbrel Community App Store Template
+## I DO NOT RECOMMEND YOU USE THIS APP STORE
+
+This app store was created via [Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps) template.
+
+I am using it add apps to my own Umbrel instance. These configurations are "good enough" for my purposes, as they give me the ability to interact with apps that are missing from the official Umbrel app store. However these are not "production ready" and likely would not be merged into the official Umbrel App Store in their current form. Use at your own risk.
+
+## Umbrel Community App Store
 
 This repository is a template to create an Umbrel Community App Store. These additional app stores allow developers to distribute applications without submitting to the [Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps).
 
