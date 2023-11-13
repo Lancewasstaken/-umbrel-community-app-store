@@ -11,4 +11,4 @@ services:
     user: "1000:1000"
     init: true
     ports:
-      - 1021:80
+      - 1022:80
