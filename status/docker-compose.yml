@@ -1,9 +1,8 @@
-version: "3"
+version: "2"
 services:
-  status_app:
-    image: mrorbitman/status:latest
-    ports:
-      - 9090:9090
+  app:
+    container_name: status_app
+    build: .
     volumes:
       - "/etc/os-release:/host_root/etc/os-release:ro"
       - "/etc/hostname:/host_root/etc/hostname:ro"
@@ -14,5 +13,4 @@ services:
       - "/mnt:/mnt:ro"
       - "/media:/media:ro"
       - "/run/media:/run/media:ro"
-    restart: unless-stopped
-
+    network_mode: "host"
