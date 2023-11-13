@@ -1,8 +1,9 @@
-version: "3.7"
+version: '2'
 services:
-  server:
+  rss-bridge:
     image: rssbridge/rss-bridge:latest
-    user: "1000:1000"
-    init: true
+    volumes:
+      - /home/umbrel/app-data/rss-bridge/config:/config
     ports:
       - 1022:80
+    restart: unless-stopped
