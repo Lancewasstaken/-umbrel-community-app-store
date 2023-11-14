@@ -1,0 +1,9 @@
+version: "2"
+services:
+  app:
+    container_name: picard_app
+    build: /home/umbrel/umbrel/app-data/picard/
+    volumes:
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+      - ${APP_DATA_DIR}/data/config:/config
+    network_mode: "host"

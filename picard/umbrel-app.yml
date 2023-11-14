@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: picard
+category: media
+name: Picard
+version: "1.32.5"
+tagline: Picard
+description: >-
+  Tag your music
+developer: mikenye
+website: https://picard-docs.musicbrainz.org/en/appendices/command_line.html
+dependencies: []
+repo: https://github.com/mikenye/docker-picard
+support: https://github.com/mikenye/docker-picard
+port: 5800
+icon: https://s3.us-west-2.amazonaws.com/jpcbucket.com/picard.png
+gallery:
+  - https://s3.us-west-2.amazonaws.com/jpcbucket.com/picard.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: ""
+torOnly: false
+submitter: johnpc
