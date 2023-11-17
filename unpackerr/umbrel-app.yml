@@ -1,0 +1,28 @@
+manifestVersion: 1.1
+id: unpackerr
+category: media
+name: Unpackerr
+version: "0.2.4"
+tagline: Unpacks *arr content
+description: >-
+  Designed to unpack content fetched from *arr
+developer: Unpackerr
+website: https://unpackerr.zip
+dependencies:
+  - transmission
+repo: https://github.com/Unpackerr/unpackerr
+support: https://github.com/Unpackerr/unpackerr/issues
+port: 3489
+icon: https://docs.golift.io/integrations/golift.png
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: johnpc
+submission: https://github.com/getumbrel/umbrel-apps/pull/712
