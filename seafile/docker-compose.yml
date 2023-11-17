@@ -32,7 +32,6 @@ services:
       - DB_ROOT_PASSWD=db_dev
       - SEAFILE_ADMIN_EMAIL=umbrel
       - SEAFILE_ADMIN_PASSWORD=moneyprintergobrrr
-      - SEAFILE_SERVER_HOSTNAME="jpc-home.tailc02d8.ts.net:8920"
 
     depends_on:
       - db
