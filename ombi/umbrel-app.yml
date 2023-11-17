@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: ombi
+category: media
+name: Ombi
+version: "1.32.5"
+tagline: Ombi
+description: >-
+  Like Overseer but different
+developer: ombi
+website: https://ombi.io
+dependencies: []
+repo: https://github.com/Ombi-app/Ombi
+support: https://github.com/Ombi-app/Ombi/issues
+port: 3579
+icon: https://avatars.githubusercontent.com/u/76852098?s=48&v=4
+gallery:
+  - https://avatars.githubusercontent.com/u/76852098?s=48&v=4
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: ""
+torOnly: false
+submitter: johnpc
