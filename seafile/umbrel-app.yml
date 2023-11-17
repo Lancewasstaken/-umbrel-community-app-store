@@ -1,0 +1,28 @@
+manifestVersion: 1.1
+id: seafile
+category: media
+name: Seafile
+version: "0.2.4"
+tagline: File sharing plain and simple
+description: >-
+  File sharing plain and simple
+developer: Readarr
+website: https://www.seafile.com/en/home/
+dependencies:
+  - transmission
+repo: https://github.com/haiwen/seafile
+support: https://github.com/haiwen/seafile/issues
+port: 13373
+icon: https://help.seafile.com/media/seafile-transparent-1024.png
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: johnpc
+submission: https://github.com/getumbrel/umbrel-apps/pull/712
