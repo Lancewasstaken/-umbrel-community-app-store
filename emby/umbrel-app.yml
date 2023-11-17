@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: emby
+category: media
+name: Emby
+version: "1.32.5"
+tagline: emby
+description: >-
+  Like Plex or Jellyfin but different
+developer: ombi
+website: https://ombi.io
+dependencies: []
+repo: https://github.com/Ombi-app/Ombi
+support: https://github.com/Ombi-app/Ombi/issues
+port: 8096
+icon: https://avatars.githubusercontent.com/u/76852098?s=48&v=4
+gallery:
+  - https://avatars.githubusercontent.com/u/76852098?s=48&v=4
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: ""
+torOnly: false
+submitter: johnpc
