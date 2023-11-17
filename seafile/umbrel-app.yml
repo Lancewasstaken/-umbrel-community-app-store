@@ -1,28 +1,27 @@
-manifestVersion: 1.1
+manifestVersion: 1
 id: seafile
-category: media
-name: Seafile
-version: "0.2.4"
-tagline: File sharing plain and simple
+category: files
+name: SeaFile
+version: "10.0.1"
+tagline: High performance file syncing and sharing
 description: >-
-  File sharing plain and simple
-developer: Readarr
+  Seafile is an open source cloud storage system with privacy protection and teamwork features. Collections of files are called libraries. Each library can be synced separately. A library can also be encrypted with a user chosen password. Seafile also allows users to create groups and easily sharing files into groups.
+
+
+  Seafile has features like File syncing, sharing and collaboration, Drive client, and many more.
+developer: haiwen
 website: https://www.seafile.com/en/home/
-dependencies:
-  - transmission
+dependencies: []
 repo: https://github.com/haiwen/seafile
-support: https://github.com/haiwen/seafile/issues
-port: 13373
-icon: https://help.seafile.com/media/seafile-transparent-1024.png
+support: https://manual.seafile.com/
+port: 8920
 gallery:
   - 1.jpg
   - 2.jpg
   - 3.jpg
 path: ""
-defaultUsername: ""
-defaultPassword: ""
-torOnly: false
-permissions:
-  - STORAGE_DOWNLOADS
-submitter: johnpc
-submission: https://github.com/getumbrel/umbrel-apps/pull/712
+deterministicPassword: false
+defaultUsername: "me@example.com"
+defaultPassword: "asecret"
+submitter: Pranshu Agrawal
+submission: https://github.com/getumbrel/umbrel-apps/pull/281

@@ -1,43 +1,34 @@
+version: "3.7"
+
 services:
+  app_proxy:
+    environment:
+      APP_HOST: seafile
+      APP_PORT: 80
+      PROXY_AUTH_ADD: "false"
+
   db:
-    image: mariadb:10.11
+    image: mariadb:10.11@sha256:3e8f15fd6328340f4024fcb7005cce0da1fa5065554b7c420626f803b67ddc12
     container_name: seafile-mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=db_dev  # Requested, set the root's password of MySQL service.
+      - MYSQL_ROOT_PASSWORD=db_dev
       - MYSQL_LOG_CONSOLE=true
     volumes:
-      - ${APP_DATA_DIR}/data/mysql:/var/lib/mysql
-      - /opt/seafile-mysql/db:/var/lib/mysql  # Requested, specifies the path to MySQL data persistent store.
-    networks:
-      - seafile-net
+      - ${APP_DATA_DIR}/data/db:/var/lib/mysql
 
   memcached:
-    image: memcached:1.6.18
+    image: memcached:1.6.18@sha256:4ab520657d9919221f752771bb013d632c9b39cea9dfae9162244b2e39885bcd
     container_name: seafile-memcached
     entrypoint: memcached -m 256
-    networks:
-      - seafile-net
 
-  seafile:
-    image: seafileltd/seafile-mc:latest
+  web:
+    image: seafileltd/seafile-mc:10.0.1@sha256:70628f29c6634e7d7df64b942e06b2f46990acbd5c6cd84ab907ce06e07ffdc1
     container_name: seafile
-    ports:
-      - "13373:80"
     volumes:
       - ${UMBREL_ROOT}/data/storage/downloads:/shared
     environment:
       - DB_HOST=db
-      - DB_ROOT_PASSWD=db_dev  # Requested, the value should be root's password of MySQL service.
-      - TIME_ZONE=Etc/UTC  # Optional, default is UTC. Should be uncomment and set to your local time zone.
-      - SEAFILE_ADMIN_EMAIL=me@example.com # Specifies Seafile admin user, default is 'me@example.com'.
-      - SEAFILE_ADMIN_PASSWORD=asecret     # Specifies Seafile admin password, default is 'asecret'.
-      - SEAFILE_SERVER_LETSENCRYPT=false   # Whether to use https or not.
-      - SEAFILE_SERVER_HOSTNAME=docs.seafile.com # Specifies your host name if https is enabled.
+      - DB_ROOT_PASSWD=db_dev
     depends_on:
       - db
       - memcached
-    networks:
-      - seafile-net
-
-networks:
-  seafile-net:
