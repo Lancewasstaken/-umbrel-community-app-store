@@ -21,7 +21,7 @@ gallery:
   - 3.jpg
 path: ""
 deterministicPassword: false
-defaultUsername: "me@example.com"
-defaultPassword: "asecret"
+defaultUsername: "umbrel"
+defaultPassword: "moneyprintergobrrr"
 submitter: Pranshu Agrawal
 submission: https://github.com/getumbrel/umbrel-apps/pull/281
