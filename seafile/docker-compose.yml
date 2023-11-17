@@ -30,6 +30,8 @@ services:
     environment:
       - DB_HOST=db
       - DB_ROOT_PASSWD=db_dev
+      - SEAFILE_ADMIN_EMAIL=umbrel
+      - SEAFILE_ADMIN_PASSWORD=moneyprintergobrrr
 
     depends_on:
       - db
