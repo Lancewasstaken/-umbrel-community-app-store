@@ -25,7 +25,7 @@ services:
     image: seafileltd/seafile-mc:10.0.1@sha256:70628f29c6634e7d7df64b942e06b2f46990acbd5c6cd84ab907ce06e07ffdc1
     container_name: seafile
     volumes:
-      - ${APP_DATA_DIR}/data/seafile-data:/shared
+      - ${UMBREL_ROOT}/data/storage/downloads/drive4/seafile-data:/shared
 
     environment:
       - DB_HOST=db
