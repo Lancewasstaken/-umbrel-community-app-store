@@ -1,0 +1,17 @@
+{layout '../layouts/default.latte'}
+
+{block header}
+	<p class="title">Settings</p>
+{/block}
+
+{block content}
+	<div class="content">
+		<p class="title">General</p>
+		{include '../components/settings/general.latte'}
+	</div>
+	<hr />
+	<div class="content">
+		<p class="title">Api</p>
+		{include '../components/settings/api.latte'}
+	</div>
+{/block}

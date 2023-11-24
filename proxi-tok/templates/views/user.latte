@@ -1,0 +1,44 @@
+{layout '../layouts/default.latte'}
+
+{var $has_rss = true}
+
+{var $og = $info->meta->og}
+{var $og_content = $info->detail->avatarLarger}
+{var $og_url = url_user($info->detail->uniqueId)}
+
+{block header}
+	<figure class="image is-inline-block is-128x128">
+		<img class="is-rounded" src="{url_stream($info->detail->avatarLarger)}" />
+	</figure>
+	<p class="title">
+		{if $info->detail->verified}
+		{include '../components/icon.latte', icon: 'check-o', text: $info->detail->nickname}
+		{else}
+		{$info->detail->nickname}
+		{/if}
+	</p>
+	<p class="subtitle">{include '../components/rss.latte'}</p>
+	{if $info->detail->privateAccount}
+	<p><strong>Private account</strong></p>
+	{/if}
+	<b>Description</b>
+	<p class="new-line">{$info->detail->signature}</p>
+	{if isset($info->detail->bioLink)}
+	<p>Link: <a href="{$info->detail->bioLink->link}">{$info->detail->bioLink->link}</a></p>
+	{/if}
+	<b>Stats</b>
+	<p>Following: {number($info->stats->followingCount)} / Followers: {number($info->stats->followerCount)}</p>
+	<p>Hearts: {number($info->stats->heartCount)} / Videos: {$info->stats->videoCount}</p>
+	{embed '../components/details.latte', title: "Details"}
+	{block content}
+	<p>Region: {$info->detail->region}</p>
+	{if $info->detail->commerceUserInfo->commerceUser}
+	<p>Category: {$info->detail->commerceUserInfo->category}</p>
+	{/if}
+	{/block}
+	{/embed}
+{/block}
+
+{block content}
+	{include '../components/feed.latte'}
+{/block}

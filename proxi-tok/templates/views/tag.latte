@@ -1,0 +1,27 @@
+{layout '../layouts/default.latte'}
+
+{var $has_rss = true}
+
+{var $og = $info->meta->og}
+{var $og_content = $info->detail->profileLarger}
+{var $og_url = url_tag($info->detail->title)}
+
+{block header}
+	{if $info->detail->profileLarger !== ''}
+	<figure class="image is-inline-block is-128x128">
+		<img class="is-rounded" src="{url_stream($info->detail->profileLarger)}" />
+	</figure>
+	{/if}
+	<p class="title">{$info->detail->title}</p>
+	<p class="subtitle">{include '../components/rss.latte'}</p>
+	<p>Views: {number($info->stats->viewCount)}</p>
+	{embed '../components/details.latte', title: 'Details'}
+	{block content}
+	<p>Is commerce: {bool_to_str($info->detail->isCommerce)}</p>
+	{/block}
+	{/embed}
+{/block}
+
+{block content}
+	{include '../components/feed.latte'}
+{/block}
