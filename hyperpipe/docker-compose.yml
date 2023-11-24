@@ -1,0 +1,8 @@
+version: "2"
+services:
+  app:
+    container_name: hyperpipe
+    build: ${APP_DATA_DIR}/hyperpipe/
+    ports:
+      - 13376:80
+    network_mode: "host"

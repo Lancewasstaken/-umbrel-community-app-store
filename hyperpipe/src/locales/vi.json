@@ -1,0 +1,127 @@
+{
+    "title": {
+        "songs": "Các bài hát",
+        "albums": "Các album",
+        "artists": "Các nhạc sĩ",
+        "similar_artists": "Các nhạc sĩ liên quan",
+        "genres": "Thể loại",
+        "community": "Cộng đồng",
+        "search": "Tìm kiếm",
+        "singles": "Các đĩa đơn",
+        "login": "Đăng nhập",
+        "moods": "Chủ đề",
+        "playlists": "Các danh sách phát",
+        "featured": "Nổi bật",
+        "feeds": "Nguồn cấp dữ liệu",
+        "spotlight": "Tiêu điểm"
+    },
+    "pref": {
+        "auto": "tự động",
+        "codec": "Codec",
+        "volume": "Âm lượng mặc định",
+        "player": "Trình phát âm thanh",
+        "best": "cao nhất",
+        "worst": "thấp nhất",
+        "quality": "Chất lượng",
+        "theme": "Giao diện",
+        "dark": "Tối (Mặc định)",
+        "light": "Sáng",
+        "blur": "Mờ",
+        "blur_light": "Mờ (Sáng)",
+        "nord": "Nord",
+        "dracula": "Dracula",
+        "auto_queue": "Tự động xếp hàng các bài hát",
+        "tab": "Thẻ mặc định",
+        "library": "Thư viện",
+        "explore": "Khám phá",
+        "home": "Trang chủ",
+        "charts": "Xếp hạng",
+        "compact": "Chế độ xem nhỏ gọn",
+        "prm": "Tắt hiệu ứng chuyển động",
+        "language": "Ngôn ngữ"
+    },
+    "action": {
+        "cancel": "Hủy",
+        "create": "Tạo",
+        "add": "Thêm",
+        "back": "Quay lại",
+        "receive": "Nhận",
+        "send": "Gửi",
+        "import": "Nhập",
+        "export": "Xuất",
+        "register_on": "Không có tài khoản? Đăng ký trên"
+    },
+    "instances": {
+        "version": "Phiên bản",
+        "name": "Tên",
+        "cdn": "CDN",
+        "loc": "Các vị trí",
+        "up_to_date": "Phiên bản mới nhất",
+        "auth": "Instance xác thực",
+        "default": "Mặc định"
+    },
+    "playlist": {
+        "create": "Tạo một danh sách phát mới",
+        "name": "Tên danh sách phát",
+        "add": "Thêm bài hát vào danh sách phát",
+        "sync": "Đồng bộ hóa các danh sách phát",
+        "select": "Lựa chọn danh sách phát để thêm"
+    },
+    "info": {
+        "search": "Bắt đầu tìm kiếm",
+        "see_all": "Xem tất cả",
+        "no_info": "Không có thông tin",
+        "saved": "Đã lưu!",
+        "copied_to_clipboard": "Đã sao chép vào bộ nhớ đệm"
+    },
+    "lyrics": {
+        "load": "Tìm lời bài hát",
+        "void": "Không có lời bài hát",
+        "lyrics": "Lời bài hát"
+    },
+    "artist": {
+        "subscribers": "người đăng ký",
+        "subs": "người đăng ký"
+    },
+    "general": {
+        "password": "mật khẩu"
+    },
+    "countries": {
+        "DE": "Đức",
+        "EG": "Ai Cập",
+        "ES": "Tây Ban Nha",
+        "FR": "Pháp",
+        "GB": "Vương quốc Anh",
+        "FI": "Phần Lan",
+        "JP": "Nhật Bản",
+        "IT": "Nước Ý",
+        "IN": "Ấn Độ",
+        "MX": "Mexico",
+        "KR": "Hàn Quốc",
+        "US": "Hoa Kỳ",
+        "TR": "Thổ Nhĩ Kỳ",
+        "ZZ": "Quốc tế",
+        "BR": "Brazil",
+        "CA": "Canada",
+        "CH": "Thụy Sĩ",
+        "CL": "Chile",
+        "DK": "Đan Mạch",
+        "ID": "Indonesia",
+        "IE": "Ireland",
+        "IL": "Israel",
+        "RU": "Nga",
+        "PL": "Ba Lan",
+        "PT": "Bồ Đào Nha",
+        "SE": "Thụy Điển",
+        "CO": "Colombia",
+        "IS": "Iceland",
+        "NL": "Hà Lan",
+        "RO": "Romania",
+        "ZW": "Zimbabwe"
+    },
+    "statusBar": {
+        "currentPlaylist": "Danh sách phát hiện tại",
+        "loop": "Lặp lại",
+        "add_current_to_playlist": "Lưu bài hát hiện tại vào một danh sách phát"
+    }
+}
