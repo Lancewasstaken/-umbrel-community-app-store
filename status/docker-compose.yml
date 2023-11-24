@@ -2,7 +2,7 @@ version: "2"
 services:
   app:
     container_name: status_app
-    build: ${APP_DATA_DIR}/status/
+    build: ${APP_DATA_DIR}
     volumes:
       - "/etc/os-release:/host_root/etc/os-release:ro"
       - "/etc/hostname:/host_root/etc/hostname:ro"

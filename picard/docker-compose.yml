@@ -2,7 +2,7 @@ version: "2"
 services:
   app:
     container_name: picard_app
-    build: ${APP_DATA_DIR}/picard/
+    build: ${APP_DATA_DIR}
     volumes:
       - ${UMBREL_ROOT}/data/storage/downloads:/downloads
       - ${APP_DATA_DIR}/data/config:/config
