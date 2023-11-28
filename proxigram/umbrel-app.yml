@@ -1,0 +1,24 @@
+manifestVersion: 1.1
+id: proxigram
+category: media
+name: Proxigram
+version: "0.2.4"
+tagline: Self-hosted instagram proxy
+description: >-
+  A front end for instagram
+developer: Proxigram
+website: https://codeberg.org/ThePenguinDev/Proxigram
+repo: https://codeberg.org/ThePenguinDev/Proxigram
+support: https://codeberg.org/ThePenguinDev/Proxigram/issues
+port: 8087
+icon: https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+submitter: johnpc
+submission: https://github.com/getumbrel/umbrel-apps/pull/712
