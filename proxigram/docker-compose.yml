@@ -3,15 +3,27 @@ version: "2.1"
 services:
     proxigram:
         # Currently no docker image so building one
-        image: proxigram:latest
-        build: ${APP_DATA_DIR}
-        container_name: proxigram
-        # 3000 is the container internal port, 8080 is the external access port, change if necessary.
+        image: mrorbitman/proxigram:latest
         ports:
             - 8087:3000
         restart: unless-stopped
-        # Copy .env.example to .env and change accordingly.
-        env_file: .env
+        environment:
+            - URL=https://instagram.jpc.io
+            - CACHE=true
+            - REDIS_URL=redis:6379
+            - EXPIRE_TIME_FOR_RSS=2d
+            - EXPIRE_TIME_FOR_POST=12h
+            - EXPIRE_TIME_FOR_POSTS=12h
+            - EXPIRE_TIME_FOR_PROFILE=12h
+            - EXPIRE_TIME_FOR_STORIES=12h
+            - PROXY=true
+            - FETCH_PROVIDERS=false
+            - FETCH_PROVIDERS_EVERY=12h
+            - PROVIDERS_LIST_URL=https://codeberg.org/ThePenguinDev/proxigram-providers/raw/branch/main/providers.json
+            - USE_HEADLESS_PROVIDERS=false
+            - RSS=true
+            - ITEMS_PER_RSS=12
+            - SLEEP_TIME_PER_REQUEST=500
 
     # When using this compose file, use REDIS_URL=redis:6379 at the env file
     redis:
