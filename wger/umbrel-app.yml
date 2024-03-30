@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: wger
+name: Wger
+tagline: Health + fitness tracking
+icon: https://svgur.com/i/14tJ.svg
+category: Development
+version: "0.0.1"
+port: 8001
+description: >-
+  Wger Health And Fitness
+developer: Wger
+website: https://github.com/wger-project
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/wger-project
+support: https://github.com/wger-project
+releaseNotes: >-
+  Initial umbrel release
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
