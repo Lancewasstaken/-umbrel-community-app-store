@@ -17,8 +17,8 @@ services:
     env_file:
       - ./config/prod.env
     volumes:
-      - static:/home/wger/static
-      - media:/home/wger/media
+      - ${UMBREL_ROOT}/data/storage/wger/static:/home/wger/static
+      - ${UMBREL_ROOT}/data/storage/wger/media:/home/wger/media
     expose:
       - 8000
     healthcheck:
@@ -85,7 +85,7 @@ services:
     env_file:
       - ./config/prod.env
     volumes:
-      - media:/home/wger/media
+      - ${UMBREL_ROOT}/data/storage/wger/media:/home/wger/media
     depends_on:
       web:
         condition: service_healthy
