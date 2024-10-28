@@ -1,8 +1,0 @@
-<details>
-	<summary>{include '../../icon.latte', icon: 'tag', text: 'Tags used'}</summary>
-	<div class="tags">
-		{foreach $challenges as $challenge}
-			<a class="tag is-primary is-rounded" href="{path('/tag/' . $challenge->title)}">#{$challenge->title}</a>
-		{/foreach}
-	</div>
-</details>
